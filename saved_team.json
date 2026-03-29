@@ -1,0 +1,71 @@
+{
+  "team_name": "Player",
+  "slots": [
+    {
+      "species": "Charmander",
+      "level": 5,
+      "nature": "Docile",
+      "moves": [
+        "Scratch",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "species": "",
+      "level": 5,
+      "nature": "Docile",
+      "moves": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "species": "",
+      "level": 5,
+      "nature": "Docile",
+      "moves": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "species": "",
+      "level": 5,
+      "nature": "Docile",
+      "moves": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "species": "",
+      "level": 5,
+      "nature": "Docile",
+      "moves": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "species": "",
+      "level": 5,
+      "nature": "Docile",
+      "moves": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+}

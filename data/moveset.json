@@ -1,0 +1,5791 @@
+{
+    "moves": [
+        {
+            "name": "Pound",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 35,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "physical"
+                }
+            ]
+        },
+        {
+            "name": "Karate Chop",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 25,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                }
+            ]
+        },
+        {
+            "name": "Double Slap",
+            "move_type": "Normal",
+            "accuracy": 85,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 5,
+                    "category": "physical",
+                    "min_hits": 2,
+                    "max_hits": 5
+                }
+            ]
+        },
+        {
+            "name": "Comet Punch",
+            "move_type": "Normal",
+            "accuracy": 85,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 5,
+                    "category": "physical",
+                    "min_hits": 2,
+                    "max_hits": 5
+                }
+            ]
+        },
+        {
+            "name": "Mega Punch",
+            "move_type": "Normal",
+            "accuracy": 85,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 16,
+                    "category": "physical"
+                }
+            ]
+        },
+        {
+            "name": "Pay Day",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Fire Punch",
+            "move_type": "Fire",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 11,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Burn",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+        {
+            "name": "Ice Punch",
+            "move_type": "Ice",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 11,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Freeze",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+        {
+            "name": "Thunder Punch",
+            "move_type": "Electric",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 11,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Paralysis",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Scratch",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 35,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "physical"
+                }
+            ]
+        },
+        {
+            "name": "Vise Grip",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 11,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Razor Wind",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "charge_turns": 1,
+            "charge_message": "{user} whipped up a Razor Wind!",
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Swords Dance",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "attack",
+                    "amount": 2,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Cut",
+            "move_type": "Normal",
+            "accuracy": 95,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Gust",
+            "move_type": "Flying",
+            "accuracy": 100,
+            "max_pp": 35,
+            "priority": 0,
+            "hits_semi_invulnerable_states": [ "air" ],
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Wing Attack",
+            "move_type": "Flying",
+            "accuracy": 100,
+            "max_pp": 35,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Fly",
+            "move_type": "Flying",
+            "accuracy": 95,
+            "max_pp": 15,
+            "priority": 0,
+            "charge_turns": 1,
+            "charge_message": "{user} flew up high!",
+            "semi_invulnerable_state": "air",
+            "semi_invulnerable_message": "{user} is high in the air!",
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 11,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Slam",
+            "move_type": "Normal",
+            "accuracy": 75,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 16,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Vine Whip",
+            "move_type": "Grass",
+            "accuracy": 100,
+            "max_pp": 25,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 9,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Stomp",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 11,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Flinch",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "Double Kick",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 6,
+                    "category": "physical",
+                    "min_hits": 2,
+                    "max_hits": 2
+                }
+            ]
+        },
+
+        {
+            "name": "Mega Kick",
+            "move_type": "Normal",
+            "accuracy": 75,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 20,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Jump Kick",
+            "move_type": "Fighting",
+            "accuracy": 95,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 16,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Rolling Kick",
+            "move_type": "Fighting",
+            "accuracy": 85,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Flinch",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "Sand Attack",
+            "move_type": "Ground",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "accuracy",
+                    "amount": -1,
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Headbutt",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 11,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Flinch",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "Horn Attack",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 25,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 9,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Fury Attack",
+            "move_type": "Normal",
+            "accuracy": 85,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 5,
+                    "category": "physical",
+                    "min_hits": 2,
+                    "max_hits": 5
+                }
+            ]
+        },
+
+        {
+            "name": "Tackle",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 35,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Body Slam",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Paralysis",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "Take Down",
+            "move_type": "Normal",
+            "accuracy": 85,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                },
+                {
+                    "kind": "recoil",
+                    "ratio": 0.25
+                }
+            ]
+        },
+
+        {
+            "name": "Thrash",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                },
+                {
+                    "kind": "lock_move",
+                    "min_turns": 2,
+                    "max_turns": 3
+                }
+            ]
+        },
+
+        {
+            "name": "Double-Edge",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "physical"
+                },
+                {
+                    "kind": "recoil",
+                    "ratio": 0.33
+                }
+            ]
+        },
+
+        {
+            "name": "Tail Whip",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "defense",
+                    "amount": -1,
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Poison Sting",
+            "move_type": "Poison",
+            "accuracy": 100,
+            "max_pp": 25,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 6,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Poison",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "Twineedle",
+            "move_type": "Bug",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 5,
+                    "category": "physical",
+                    "min_hits": 2,
+                    "max_hits": 2
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Poison",
+                    "target_side": "target",
+                    "chance": 0.2
+                }
+            ]
+        },
+
+        {
+            "name": "Pin Missile",
+            "move_type": "Bug",
+            "accuracy": 95,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 5,
+                    "category": "physical",
+                    "min_hits": 2,
+                    "max_hits": 5
+                }
+            ]
+        },
+
+        {
+            "name": "Leer",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "defense",
+                    "amount": -1,
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Bite",
+            "move_type": "Dark",
+            "accuracy": 100,
+            "max_pp": 25,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Flinch",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "Growl",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 40,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "attack",
+                    "amount": -1,
+                    "target_side": "target"
+                }
+            ]
+        },
+        {
+            "name": "Sing",
+            "move_type": "Normal",
+            "accuracy": 55,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "apply_status",
+                    "status_name": "Sleep",
+                    "target_side": "target"
+                }
+            ]
+        },
+        {
+            "name": "Supersonic",
+            "move_type": "Normal",
+            "accuracy": 55,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "apply_status",
+                    "status_name": "Confusion",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Acid",
+            "move_type": "Poison",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Ember",
+            "move_type": "Fire",
+            "accuracy": 100,
+            "max_pp": 25,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Burn",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Flamethrower",
+            "move_type": "Fire",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 15,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Burn",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Water Gun",
+            "move_type": "Water",
+            "accuracy": 100,
+            "max_pp": 25,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Hydro Pump",
+            "move_type": "Water",
+            "accuracy": 80,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Surf",
+            "move_type": "Water",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "hits_semi_invulnerable_states": [ "underwater" ],
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Ice Beam",
+            "move_type": "Ice",
+            "accuracy": 95,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Freeze",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Blizzard",
+            "move_type": "Ice",
+            "accuracy": 70,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Freeze",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Psybeam",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Confusion",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Bubble Beam",
+            "move_type": "Water",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Aurora Beam",
+            "move_type": "Ice",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 11,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Hyper Beam",
+            "move_type": "Normal",
+            "accuracy": 90,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 20,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Peck",
+            "move_type": "Flying",
+            "accuracy": 100,
+            "max_pp": 35,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 7,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Drill Peck",
+            "move_type": "Flying",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Submission",
+            "move_type": "Fighting",
+            "accuracy": 80,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "physical"
+                },
+                {
+                    "kind": "recoil",
+                    "ratio": 0.25
+                }
+            ]
+        },
+
+        {
+            "name": "Low Kick",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Counter",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": -5,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Seismic Toss",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [ { "kind": "user_level_damage" } ]
+        },
+
+        {
+            "name": "Strength",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Absorb",
+            "move_type": "Grass",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 6,
+                    "category": "special"
+                },
+                {
+                    "kind": "drain",
+                    "ratio": 0.5
+                }
+            ]
+        },
+
+        {
+            "name": "Mega Drain",
+            "move_type": "Grass",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 9,
+                    "category": "special"
+                },
+                {
+                    "kind": "drain",
+                    "ratio": 0.5
+                }
+            ]
+        },
+
+        {
+            "name": "Growth",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "special_attack",
+                    "amount": 1,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Razor Leaf",
+            "move_type": "Grass",
+            "accuracy": 95,
+            "max_pp": 25,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 11,
+                    "category": "physical",
+                    "crit_stage": 1
+                }
+            ]
+        },
+
+        {
+            "name": "Solar Beam",
+            "move_type": "Grass",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "charge_turns": 1,
+            "charge_message": "{user} began gathering light!",
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Poison Powder",
+            "move_type": "Poison",
+            "accuracy": 75,
+            "max_pp": 35,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "apply_status",
+                    "status_name": "Poison",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Stun Spore",
+            "move_type": "Grass",
+            "accuracy": 75,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "apply_status",
+                    "status_name": "Paralysis",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Sleep Powder",
+            "move_type": "Grass",
+            "accuracy": 75,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "apply_status",
+                    "status_name": "Sleep",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Petal Dance",
+            "move_type": "Grass",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                },
+                {
+                    "kind": "lock_move",
+                    "min_turns": 2,
+                    "max_turns": 3
+                }
+            ]
+        },
+        {
+            "name": "Dragon Rage",
+            "move_type": "Dragon",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "fixed_damage",
+                    "damage": 40
+                }
+            ]
+        },
+
+        {
+            "name": "Thunder Shock",
+            "move_type": "Electric",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Paralysis",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Thunderbolt",
+            "move_type": "Electric",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Paralysis",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Thunder Wave",
+            "move_type": "Electric",
+            "accuracy": 90,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "apply_status",
+                    "status_name": "Paralysis",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Thunder",
+            "move_type": "Electric",
+            "accuracy": 70,
+            "max_pp": 10,
+            "priority": 0,
+            "hits_semi_invulnerable_states": [ "air" ],
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Paralysis",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "Rock Throw",
+            "move_type": "Rock",
+            "accuracy": 90,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Earthquake",
+            "move_type": "Ground",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "hits_semi_invulnerable_states": [ "underground" ],
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 13,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Dig",
+            "move_type": "Ground",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "charge_turns": 1,
+            "charge_message": "{user} burrowed underground!",
+            "semi_invulnerable_state": "underground",
+            "semi_invulnerable_message": "{user} is underground!",
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Confusion",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 25,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Confusion",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Psychic",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 15,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Hypnosis",
+            "move_type": "Psychic",
+            "accuracy": 60,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "apply_status",
+                    "status_name": "Sleep",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Meditate",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 40,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "attack",
+                    "amount": 1,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Agility",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "speed",
+                    "amount": 2,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Quick Attack",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 1,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Rage",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Night Shade",
+            "move_type": "Ghost",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [ { "kind": "user_level_damage" } ]
+        },
+
+        {
+            "name": "Screech",
+            "move_type": "Normal",
+            "accuracy": 85,
+            "max_pp": 40,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "defense",
+                    "amount": -2,
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Double Team",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "evasion",
+                    "amount": 1,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Recover",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "heal_percent",
+                    "ratio": 0.5
+                }
+            ]
+        },
+
+        {
+            "name": "Harden",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "defense",
+                    "amount": 1,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Smokescreen",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "accuracy",
+                    "amount": -1,
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Confuse Ray",
+            "move_type": "Ghost",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "apply_status",
+                    "status_name": "Confusion",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Withdraw",
+            "move_type": "Water",
+            "accuracy": 100,
+            "max_pp": 40,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "defense",
+                    "amount": 1,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Defense Curl",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 40,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "defense",
+                    "amount": 1,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Barrier",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "defense",
+                    "amount": 2,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Light Screen",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": []
+        },
+
+        {
+            "name": "Reflect",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": []
+        },
+
+        {
+            "name": "Focus Energy",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": []
+        },
+
+        {
+            "name": "Lick",
+            "move_type": "Ghost",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 6,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Paralysis",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Smog",
+            "move_type": "Poison",
+            "accuracy": 70,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 6,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Poison",
+                    "target_side": "target",
+                    "chance": 0.4
+                }
+            ]
+        },
+
+        {
+            "name": "Sludge",
+            "move_type": "Poison",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Poison",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+        {
+            "name": "Bone Club",
+            "move_type": "Ground",
+            "accuracy": 85,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Flinch",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Fire Blast",
+            "move_type": "Fire",
+            "accuracy": 85,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Burn",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Waterfall",
+            "move_type": "Water",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Flinch",
+                    "target_side": "target",
+                    "chance": 0.2
+                }
+            ]
+        },
+
+        {
+            "name": "Swift",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 9,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Skull Bash",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "charge_turns": 1,
+            "charge_message": "{user} tucked in its head!",
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 16,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Spike Cannon",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 5,
+                    "category": "physical",
+                    "min_hits": 2,
+                    "max_hits": 5
+                }
+            ]
+        },
+
+        {
+            "name": "Constrict",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 35,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 5,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Amnesia",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "special_defense",
+                    "amount": 2,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Soft-Boiled",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "heal_percent",
+                    "ratio": 0.5
+                }
+            ]
+        },
+
+        {
+            "name": "High Jump Kick",
+            "move_type": "Fighting",
+            "accuracy": 90,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Glare",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "apply_status",
+                    "status_name": "Paralysis",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Dream Eater",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                },
+                {
+                    "kind": "drain",
+                    "ratio": 0.5
+                }
+            ]
+        },
+
+        {
+            "name": "Poison Gas",
+            "move_type": "Poison",
+            "accuracy": 90,
+            "max_pp": 40,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "apply_status",
+                    "status_name": "Poison",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Barrage",
+            "move_type": "Normal",
+            "accuracy": 85,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 5,
+                    "category": "physical",
+                    "min_hits": 2,
+                    "max_hits": 5
+                }
+            ]
+        },
+
+        {
+            "name": "Leech Life",
+            "move_type": "Bug",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 6,
+                    "category": "physical"
+                },
+                {
+                    "kind": "drain",
+                    "ratio": 0.5
+                }
+            ]
+        },
+
+        {
+            "name": "Lovely Kiss",
+            "move_type": "Normal",
+            "accuracy": 75,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "apply_status",
+                    "status_name": "Sleep",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Sky Attack",
+            "move_type": "Flying",
+            "accuracy": 90,
+            "max_pp": 5,
+            "priority": 0,
+            "charge_turns": 1,
+            "charge_message": "{user} is glowing!",
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Bubble",
+            "move_type": "Water",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 6,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Dizzy Punch",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Confusion",
+                    "target_side": "target",
+                    "chance": 0.2
+                }
+            ]
+        },
+
+        {
+            "name": "Spore",
+            "move_type": "Grass",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "apply_status",
+                    "status_name": "Sleep",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Psywave",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [ { "kind": "user_level_damage" } ]
+        },
+
+        {
+            "name": "Splash",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 40,
+            "priority": 0,
+            "effects": []
+        },
+
+        {
+            "name": "Acid Armor",
+            "move_type": "Poison",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "defense",
+                    "amount": 2,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Crabhammer",
+            "move_type": "Water",
+            "accuracy": 90,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 15,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Explosion",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 25,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Fury Swipes",
+            "move_type": "Normal",
+            "accuracy": 80,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 5,
+                    "category": "physical",
+                    "min_hits": 2,
+                    "max_hits": 5
+                }
+            ]
+        },
+
+        {
+            "name": "Bonemerang",
+            "move_type": "Ground",
+            "accuracy": 90,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 10,
+                    "category": "physical",
+                    "min_hits": 2,
+                    "max_hits": 2
+                }
+            ]
+        },
+
+        {
+            "name": "Rest",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "heal_percent",
+                    "ratio": 1.0
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Sleep",
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Rock Slide",
+            "move_type": "Rock",
+            "accuracy": 90,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 13,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Flinch",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "Hyper Fang",
+            "move_type": "Normal",
+            "accuracy": 90,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 13,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Flinch",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Sharpen",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "attack",
+                    "amount": 1,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Tri Attack",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Super Fang",
+            "move_type": "Normal",
+            "accuracy": 90,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "current_hp_fraction_damage",
+                    "ratio": 0.5
+                }
+            ]
+        },
+
+        {
+            "name": "Slash",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 11,
+                    "category": "physical"
+                }
+            ]
+        },
+        {
+            "name": "Triple Kick",
+            "move_type": "Fighting",
+            "accuracy": 90,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 6,
+                    "category": "physical",
+                    "min_hits": 3,
+                    "max_hits": 3
+                }
+            ]
+        },
+
+        {
+            "name": "Flame Wheel",
+            "move_type": "Fire",
+            "accuracy": 100,
+            "max_pp": 25,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Burn",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Snore",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Flail",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Aeroblast",
+            "move_type": "Flying",
+            "accuracy": 95,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Cotton Spore",
+            "move_type": "Grass",
+            "accuracy": 100,
+            "max_pp": 40,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "speed",
+                    "amount": -2,
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Reversal",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Powder Snow",
+            "move_type": "Ice",
+            "accuracy": 100,
+            "max_pp": 25,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Freeze",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Protect",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 4,
+            "effects": [
+                {
+                    "kind": "apply_status",
+                    "status_name": "Protect",
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Mach Punch",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 1,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Scary Face",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "speed",
+                    "amount": -2,
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Feint Attack",
+            "move_type": "Dark",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Sweet Kiss",
+            "move_type": "Fairy",
+            "accuracy": 75,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "apply_status",
+                    "status_name": "Confusion",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Belly Drum",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "attack",
+                    "amount": 4,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Sludge Bomb",
+            "move_type": "Poison",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Poison",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "Mud-Slap",
+            "move_type": "Ground",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 6,
+                    "category": "special"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "accuracy",
+                    "amount": -1,
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Octazooka",
+            "move_type": "Water",
+            "accuracy": 85,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 13,
+                    "category": "special"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "accuracy",
+                    "amount": -1,
+                    "target_side": "target",
+                    "chance": 0.5
+                }
+            ]
+        },
+
+        {
+            "name": "Zap Cannon",
+            "move_type": "Electric",
+            "accuracy": 50,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Paralysis",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Icy Wind",
+            "move_type": "Ice",
+            "accuracy": 95,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 9,
+                    "category": "special"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "speed",
+                    "amount": -1,
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Outrage",
+            "move_type": "Dragon",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                },
+                {
+                    "kind": "lock_move",
+                    "min_turns": 2,
+                    "max_turns": 3
+                }
+            ]
+        },
+
+        {
+            "name": "Giga Drain",
+            "move_type": "Grass",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                },
+                {
+                    "kind": "drain",
+                    "ratio": 0.5
+                }
+            ]
+        },
+
+        {
+            "name": "Charm",
+            "move_type": "Fairy",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "attack",
+                    "amount": -2,
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Rollout",
+            "move_type": "Rock",
+            "accuracy": 90,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "False Swipe",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 40,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Swagger",
+            "move_type": "Normal",
+            "accuracy": 85,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "attack",
+                    "amount": 2,
+                    "target_side": "target"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Confusion",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Spark",
+            "move_type": "Electric",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Paralysis",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "Fury Cutter",
+            "move_type": "Bug",
+            "accuracy": 95,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 7,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Steel Wing",
+            "move_type": "Steel",
+            "accuracy": 90,
+            "max_pp": 25,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 11,
+                    "category": "physical"
+                }
+            ]
+        },
+        {
+            "name": "Attract",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "apply_status",
+                    "status_name": "Confusion",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Return",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Frustration",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Present",
+            "move_type": "Normal",
+            "accuracy": 90,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Sacred Fire",
+            "move_type": "Fire",
+            "accuracy": 95,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Burn",
+                    "target_side": "target",
+                    "chance": 0.5
+                }
+            ]
+        },
+
+        {
+            "name": "Magnitude",
+            "move_type": "Ground",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Dynamic Punch",
+            "move_type": "Fighting",
+            "accuracy": 50,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Confusion",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Megahorn",
+            "move_type": "Bug",
+            "accuracy": 85,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Dragon Breath",
+            "move_type": "Dragon",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Paralysis",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "Crunch",
+            "move_type": "Dark",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Extreme Speed",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 2,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Ancient Power",
+            "move_type": "Rock",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Shadow Ball",
+            "move_type": "Ghost",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 13,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Rock Smash",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Fake Out",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 3,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Flinch",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Facade",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Focus Punch",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": -3,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 20,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Brick Break",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Yawn",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "apply_status",
+                    "status_name": "Sleep",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Knock Off",
+            "move_type": "Dark",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Endeavor",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "current_hp_fraction_damage",
+                    "ratio": 0.5
+                }
+            ]
+        },
+
+        {
+            "name": "Eruption",
+            "move_type": "Fire",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Dive",
+            "move_type": "Water",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "charge_turns": 1,
+            "charge_message": "{user} dove underwater!",
+            "semi_invulnerable_state": "underwater",
+            "semi_invulnerable_message": "{user} is underwater!",
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Arm Thrust",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 5,
+                    "category": "physical",
+                    "min_hits": 2,
+                    "max_hits": 5
+                }
+            ]
+        },
+
+        {
+            "name": "Tail Glow",
+            "move_type": "Bug",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "special_attack",
+                    "amount": 2,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Blaze Kick",
+            "move_type": "Fire",
+            "accuracy": 90,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Burn",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Ice Ball",
+            "move_type": "Ice",
+            "accuracy": 90,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Needle Arm",
+            "move_type": "Grass",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Flinch",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "Slack Off",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "heal_percent",
+                    "ratio": 0.5
+                }
+            ]
+        },
+
+        {
+            "name": "Hyper Voice",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 13,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Poison Fang",
+            "move_type": "Poison",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Poison",
+                    "target_side": "target",
+                    "chance": 0.5
+                }
+            ]
+        },
+        {
+            "name": "Crush Claw",
+            "move_type": "Normal",
+            "accuracy": 95,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 13,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Blast Burn",
+            "move_type": "Fire",
+            "accuracy": 90,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 20,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Hydro Cannon",
+            "move_type": "Water",
+            "accuracy": 90,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 20,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Meteor Mash",
+            "move_type": "Steel",
+            "accuracy": 90,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Astonish",
+            "move_type": "Ghost",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 6,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Flinch",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "Air Cutter",
+            "move_type": "Flying",
+            "accuracy": 95,
+            "max_pp": 25,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 9,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Overheat",
+            "move_type": "Fire",
+            "accuracy": 90,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 20,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Rock Tomb",
+            "move_type": "Rock",
+            "accuracy": 95,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "speed",
+                    "amount": -1,
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Silver Wind",
+            "move_type": "Bug",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Metal Sound",
+            "move_type": "Steel",
+            "accuracy": 85,
+            "max_pp": 40,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "special_defense",
+                    "amount": -2,
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Tickle",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "attack",
+                    "amount": -1,
+                    "target_side": "target"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "defense",
+                    "amount": -1,
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Cosmic Power",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "defense",
+                    "amount": 1,
+                    "target_side": "user"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "special_defense",
+                    "amount": 1,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Water Spout",
+            "move_type": "Water",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Signal Beam",
+            "move_type": "Bug",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Confusion",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Shadow Punch",
+            "move_type": "Ghost",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Extrasensory",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Flinch",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Sky Uppercut",
+            "move_type": "Fighting",
+            "accuracy": 90,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Sand Tomb",
+            "move_type": "Ground",
+            "accuracy": 85,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Muddy Water",
+            "move_type": "Water",
+            "accuracy": 85,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Bullet Seed",
+            "move_type": "Grass",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 5,
+                    "category": "physical",
+                    "min_hits": 2,
+                    "max_hits": 5
+                }
+            ]
+        },
+
+        {
+            "name": "Aerial Ace",
+            "move_type": "Flying",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Icicle Spear",
+            "move_type": "Ice",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 5,
+                    "category": "physical",
+                    "min_hits": 2,
+                    "max_hits": 5
+                }
+            ]
+        },
+
+        {
+            "name": "Iron Defense",
+            "move_type": "Steel",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "defense",
+                    "amount": 2,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Howl",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 40,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "attack",
+                    "amount": 1,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Dragon Claw",
+            "move_type": "Dragon",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Bulk Up",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "attack",
+                    "amount": 1,
+                    "target_side": "user"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "defense",
+                    "amount": 1,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Bounce",
+            "move_type": "Flying",
+            "accuracy": 85,
+            "max_pp": 5,
+            "priority": 0,
+            "charge_turns": 1,
+            "charge_message": "{user} bounced high!",
+            "semi_invulnerable_state": "air",
+            "semi_invulnerable_message": "{user} is in the air!",
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 13,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Paralysis",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "Mud Shot",
+            "move_type": "Ground",
+            "accuracy": 95,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "special"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "speed",
+                    "amount": -1,
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Poison Tail",
+            "move_type": "Poison",
+            "accuracy": 100,
+            "max_pp": 25,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Poison",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+        {
+            "name": "Calm Mind",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "special_attack",
+                    "amount": 1,
+                    "target_side": "user"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "special_defense",
+                    "amount": 1,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Leaf Blade",
+            "move_type": "Grass",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 13,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Dragon Dance",
+            "move_type": "Dragon",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "attack",
+                    "amount": 1,
+                    "target_side": "user"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "speed",
+                    "amount": 1,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Rock Blast",
+            "move_type": "Rock",
+            "accuracy": 90,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 5,
+                    "category": "physical",
+                    "min_hits": 2,
+                    "max_hits": 5
+                }
+            ]
+        },
+
+        {
+            "name": "Shock Wave",
+            "move_type": "Electric",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 9,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Water Pulse",
+            "move_type": "Water",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Confusion",
+                    "target_side": "target",
+                    "chance": 0.2
+                }
+            ]
+        },
+
+        {
+            "name": "Close Combat",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Payback",
+            "move_type": "Dark",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Assurance",
+            "move_type": "Dark",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Punishment",
+            "move_type": "Dark",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Sucker Punch",
+            "move_type": "Dark",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 1,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Aqua Ring",
+            "move_type": "Water",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "heal_percent",
+                    "ratio": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Flare Blitz",
+            "move_type": "Fire",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "physical"
+                },
+                {
+                    "kind": "recoil",
+                    "ratio": 0.33
+                }
+            ]
+        },
+
+        {
+            "name": "Force Palm",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Paralysis",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "Aura Sphere",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Rock Polish",
+            "move_type": "Rock",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "speed",
+                    "amount": 2,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Poison Jab",
+            "move_type": "Poison",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Poison",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "Dark Pulse",
+            "move_type": "Dark",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Flinch",
+                    "target_side": "target",
+                    "chance": 0.2
+                }
+            ]
+        },
+
+        {
+            "name": "Night Slash",
+            "move_type": "Dark",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Aqua Tail",
+            "move_type": "Water",
+            "accuracy": 90,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Seed Bomb",
+            "move_type": "Grass",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Air Slash",
+            "move_type": "Flying",
+            "accuracy": 95,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Flinch",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "X-Scissor",
+            "move_type": "Bug",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Bug Buzz",
+            "move_type": "Bug",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Dragon Pulse",
+            "move_type": "Dragon",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Power Gem",
+            "move_type": "Rock",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Drain Punch",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                },
+                {
+                    "kind": "drain",
+                    "ratio": 0.5
+                }
+            ]
+        },
+
+        {
+            "name": "Focus Blast",
+            "move_type": "Fighting",
+            "accuracy": 70,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Energy Ball",
+            "move_type": "Grass",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Brave Bird",
+            "move_type": "Flying",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "physical"
+                },
+                {
+                    "kind": "recoil",
+                    "ratio": 0.33
+                }
+            ]
+        },
+
+        {
+            "name": "Earth Power",
+            "move_type": "Ground",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "special"
+                }
+            ]
+        },
+        {
+            "name": "Bullet Punch",
+            "move_type": "Steel",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 1,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "physical"
+                }
+            ]
+        },
+        {
+            "name": "Ice Shard",
+            "move_type": "Ice",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 1,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "physical"
+                }
+            ]
+        },
+        {
+            "name": "Shadow Claw",
+            "move_type": "Ghost",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Thunder Fang",
+            "move_type": "Electric",
+            "accuracy": 95,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Paralysis",
+                    "target_side": "target",
+                    "chance": 0.1
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Flinch",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Ice Fang",
+            "move_type": "Ice",
+            "accuracy": 95,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Freeze",
+                    "target_side": "target",
+                    "chance": 0.1
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Flinch",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Fire Fang",
+            "move_type": "Fire",
+            "accuracy": 95,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Burn",
+                    "target_side": "target",
+                    "chance": 0.1
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Flinch",
+                    "target_side": "target",
+                    "chance": 0.1
+                }
+            ]
+        },
+
+        {
+            "name": "Shadow Sneak",
+            "move_type": "Ghost",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 1,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Mud Bomb",
+            "move_type": "Ground",
+            "accuracy": 85,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Psycho Cut",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 11,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Zen Headbutt",
+            "move_type": "Psychic",
+            "accuracy": 90,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 13,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Flinch",
+                    "target_side": "target",
+                    "chance": 0.2
+                }
+            ]
+        },
+
+        {
+            "name": "Flash Cannon",
+            "move_type": "Steel",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Draco Meteor",
+            "move_type": "Dragon",
+            "accuracy": 90,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 20,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Discharge",
+            "move_type": "Electric",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Paralysis",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "Lava Plume",
+            "move_type": "Fire",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Burn",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "Leaf Storm",
+            "move_type": "Grass",
+            "accuracy": 90,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 20,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Power Whip",
+            "move_type": "Grass",
+            "accuracy": 85,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Stone Edge",
+            "move_type": "Rock",
+            "accuracy": 80,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Grass Knot",
+            "move_type": "Grass",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Bug Bite",
+            "move_type": "Bug",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 9,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Charge Beam",
+            "move_type": "Electric",
+            "accuracy": 90,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "special"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "special_attack",
+                    "amount": 1,
+                    "target_side": "user",
+                    "chance": 0.7
+                }
+            ]
+        },
+
+        {
+            "name": "Wood Hammer",
+            "move_type": "Grass",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "physical"
+                },
+                {
+                    "kind": "recoil",
+                    "ratio": 0.33
+                }
+            ]
+        },
+
+        {
+            "name": "Aqua Jet",
+            "move_type": "Water",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 1,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Head Smash",
+            "move_type": "Rock",
+            "accuracy": 80,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 20,
+                    "category": "physical"
+                },
+                {
+                    "kind": "recoil",
+                    "ratio": 0.5
+                }
+            ]
+        },
+
+        {
+            "name": "Double Hit",
+            "move_type": "Normal",
+            "accuracy": 90,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 8,
+                    "category": "physical",
+                    "min_hits": 2,
+                    "max_hits": 2
+                }
+            ]
+        },
+
+        {
+            "name": "Flame Burst",
+            "move_type": "Fire",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Sludge Wave",
+            "move_type": "Poison",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Quiver Dance",
+            "move_type": "Bug",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "special_attack",
+                    "amount": 1,
+                    "target_side": "user"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "special_defense",
+                    "amount": 1,
+                    "target_side": "user"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "speed",
+                    "amount": 1,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Heavy Slam",
+            "move_type": "Steel",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Electro Ball",
+            "move_type": "Electric",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Flame Charge",
+            "move_type": "Fire",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "speed",
+                    "amount": 1,
+                    "target_side": "user"
+                }
+            ]
+        },
+        {
+            "name": "Coil",
+            "move_type": "Poison",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "attack",
+                    "amount": 1,
+                    "target_side": "user"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "defense",
+                    "amount": 1,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Low Sweep",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "speed",
+                    "amount": -1,
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Acid Spray",
+            "move_type": "Poison",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "special"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "special_defense",
+                    "amount": -2,
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Foul Play",
+            "move_type": "Dark",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Round",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Echoed Voice",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Chip Away",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Clear Smog",
+            "move_type": "Poison",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Stored Power",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Scald",
+            "move_type": "Water",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Burn",
+                    "target_side": "target",
+                    "chance": 0.3
+                }
+            ]
+        },
+
+        {
+            "name": "Shell Smash",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "attack",
+                    "amount": 2,
+                    "target_side": "user"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "special_attack",
+                    "amount": 2,
+                    "target_side": "user"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "speed",
+                    "amount": 2,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Heal Pulse",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "heal_percent",
+                    "ratio": 0.5
+                }
+            ]
+        },
+
+        {
+            "name": "Hex",
+            "move_type": "Ghost",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Acrobatics",
+            "move_type": "Flying",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Retaliate",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Final Gambit",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [ { "kind": "user_level_damage" } ]
+        },
+
+        {
+            "name": "Inferno",
+            "move_type": "Fire",
+            "accuracy": 50,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "special"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Burn",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Volt Switch",
+            "move_type": "Electric",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Struggle Bug",
+            "move_type": "Bug",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Bulldoze",
+            "move_type": "Ground",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "speed",
+                    "amount": -1,
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Frost Breath",
+            "move_type": "Ice",
+            "accuracy": 90,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Dragon Tail",
+            "move_type": "Dragon",
+            "accuracy": 90,
+            "max_pp": 10,
+            "priority": -6,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Work Up",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 30,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "attack",
+                    "amount": 1,
+                    "target_side": "user"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "special_attack",
+                    "amount": 1,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Electroweb",
+            "move_type": "Electric",
+            "accuracy": 95,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "special"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "speed",
+                    "amount": -1,
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Wild Charge",
+            "move_type": "Electric",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "physical"
+                },
+                {
+                    "kind": "recoil",
+                    "ratio": 0.25
+                }
+            ]
+        },
+
+        {
+            "name": "Drill Run",
+            "move_type": "Ground",
+            "accuracy": 95,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Dual Chop",
+            "move_type": "Dragon",
+            "accuracy": 90,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 8,
+                    "category": "physical",
+                    "min_hits": 2,
+                    "max_hits": 2
+                }
+            ]
+        },
+
+        {
+            "name": "Horn Leech",
+            "move_type": "Grass",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "physical"
+                },
+                {
+                    "kind": "drain",
+                    "ratio": 0.5
+                }
+            ]
+        },
+
+        {
+            "name": "Sacred Sword",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Razor Shell",
+            "move_type": "Water",
+            "accuracy": 95,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Heat Crash",
+            "move_type": "Fire",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Leaf Tornado",
+            "move_type": "Grass",
+            "accuracy": 90,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                }
+            ]
+        },
+        {
+            "name": "Trailblaze",
+            "move_type": "Grass",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "speed",
+                    "amount": 1,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Chilling Water",
+            "move_type": "Water",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "special"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "attack",
+                    "amount": -1,
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Hyper Drill",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 16,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Twin Beam",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 8,
+                    "category": "special",
+                    "min_hits": 2,
+                    "max_hits": 2
+                }
+            ]
+        },
+
+        {
+            "name": "Rage Fist",
+            "move_type": "Ghost",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Armor Cannon",
+            "move_type": "Fire",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 20,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Bitter Blade",
+            "move_type": "Fire",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "physical"
+                },
+                {
+                    "kind": "drain",
+                    "ratio": 0.5
+                }
+            ]
+        },
+
+        {
+            "name": "Double Shock",
+            "move_type": "Electric",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Gigaton Hammer",
+            "move_type": "Steel",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 20,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Comeuppance",
+            "move_type": "Dark",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": -4,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Aqua Cutter",
+            "move_type": "Water",
+            "accuracy": 100,
+            "max_pp": 20,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 11,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Population Bomb",
+            "move_type": "Normal",
+            "accuracy": 90,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 5,
+                    "category": "physical",
+                    "min_hits": 2,
+                    "max_hits": 10
+                }
+            ]
+        },
+
+        {
+            "name": "Ice Spinner",
+            "move_type": "Ice",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Glaive Rush",
+            "move_type": "Dragon",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 20,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Salt Cure",
+            "move_type": "Rock",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 10,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Triple Dive",
+            "move_type": "Water",
+            "accuracy": 95,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "multi_hit",
+                    "power": 8,
+                    "category": "physical",
+                    "min_hits": 3,
+                    "max_hits": 3
+                }
+            ]
+        },
+
+        {
+            "name": "Mortal Spin",
+            "move_type": "Poison",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 8,
+                    "category": "physical"
+                },
+                {
+                    "kind": "apply_status",
+                    "status_name": "Poison",
+                    "target_side": "target"
+                }
+            ]
+        },
+
+        {
+            "name": "Kowtow Cleave",
+            "move_type": "Dark",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Flower Trick",
+            "move_type": "Grass",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Torch Song",
+            "move_type": "Fire",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "special"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "special_attack",
+                    "amount": 1,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Aqua Step",
+            "move_type": "Water",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                },
+                {
+                    "kind": "modify_stat_stage",
+                    "stat_name": "speed",
+                    "amount": 1,
+                    "target_side": "user"
+                }
+            ]
+        },
+
+        {
+            "name": "Raging Bull",
+            "move_type": "Normal",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Make It Rain",
+            "move_type": "Steel",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 18,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Psyblade",
+            "move_type": "Psychic",
+            "accuracy": 100,
+            "max_pp": 15,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 12,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Hydro Steam",
+            "move_type": "Water",
+            "accuracy": 100,
+            "max_pp": 10,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 14,
+                    "category": "special"
+                }
+            ]
+        },
+
+        {
+            "name": "Collision Course",
+            "move_type": "Fighting",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 20,
+                    "category": "physical"
+                }
+            ]
+        },
+
+        {
+            "name": "Electro Drift",
+            "move_type": "Electric",
+            "accuracy": 100,
+            "max_pp": 5,
+            "priority": 0,
+            "effects": [
+                {
+                    "kind": "damage",
+                    "power": 20,
+                    "category": "special"
+                }
+            ]
+        }
+
+    ]
+}

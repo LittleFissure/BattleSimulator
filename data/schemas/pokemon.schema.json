@@ -1,0 +1,128 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Pokemon Database",
+  "type": "object",
+  "required": [ "pokemon" ],
+  "properties": {
+    "pokemon": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/pokemonTemplate"
+      }
+    }
+  },
+  "definitions": {
+    "stats": {
+      "type": "object",
+      "required": [
+        "hp",
+        "attack",
+        "defense",
+        "special_attack",
+        "special_defense",
+        "speed"
+      ],
+      "properties": {
+        "hp": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "attack": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "defense": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "special_attack": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "special_defense": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "speed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "accuracy": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 100
+        },
+        "evasion": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 100
+        }
+      },
+      "additionalProperties": false
+    },
+    "evolution": {
+      "type": "object",
+      "required": [ "target_name", "level_requirement" ],
+      "properties": {
+        "target_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "level_requirement": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "pokemonTemplate": {
+      "type": "object",
+      "required": [ "name", "types", "base_stats", "evolutions" ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "types": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 2,
+          "items": {
+            "type": "string",
+            "enum": [
+              "Normal",
+              "Fire",
+              "Water",
+              "Electric",
+              "Grass",
+              "Ice",
+              "Fighting",
+              "Poison",
+              "Ground",
+              "Flying",
+              "Psychic",
+              "Bug",
+              "Rock",
+              "Ghost",
+              "Dragon",
+              "Dark",
+              "Steel",
+              "Fairy"
+            ]
+          }
+        },
+        "base_stats": {
+          "$ref": "#/definitions/stats"
+        },
+        "evolutions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/evolution"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

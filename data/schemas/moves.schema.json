@@ -1,0 +1,388 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Move Database",
+  "type": "object",
+  "required": [
+    "moves"
+  ],
+  "properties": {
+    "moves": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/move"
+      }
+    }
+  },
+  "definitions": {
+    "category": {
+      "type": "string",
+      "enum": [
+        "physical",
+        "special"
+      ]
+    },
+    "typeName": {
+      "type": "string",
+      "enum": [
+        "Normal",
+        "Fire",
+        "Water",
+        "Electric",
+        "Grass",
+        "Ice",
+        "Fighting",
+        "Poison",
+        "Ground",
+        "Flying",
+        "Psychic",
+        "Bug",
+        "Rock",
+        "Ghost",
+        "Dragon",
+        "Dark",
+        "Steel",
+        "Fairy"
+      ]
+    },
+    "targetSide": {
+      "type": "string",
+      "enum": [
+        "user",
+        "target"
+      ]
+    },
+    "effect": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "power",
+            "category"
+          ],
+          "properties": {
+            "kind": {
+              "const": "damage"
+            },
+            "power": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "category": {
+              "$ref": "#/definitions/category"
+            },
+            "crit_stage": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "power",
+            "category",
+            "min_hits",
+            "max_hits"
+          ],
+          "properties": {
+            "kind": {
+              "const": "multi_hit"
+            },
+            "power": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "category": {
+              "$ref": "#/definitions/category"
+            },
+            "min_hits": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "max_hits": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "crit_stage": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "damage"
+          ],
+          "properties": {
+            "kind": {
+              "const": "fixed_damage"
+            },
+            "damage": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "ratio"
+          ],
+          "properties": {
+            "kind": {
+              "const": "current_hp_fraction_damage"
+            },
+            "ratio": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "kind"
+          ],
+          "properties": {
+            "kind": {
+              "const": "user_level_damage"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "ratio"
+          ],
+          "properties": {
+            "kind": {
+              "const": "heal_percent"
+            },
+            "ratio": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "ratio"
+          ],
+          "properties": {
+            "kind": {
+              "const": "drain"
+            },
+            "ratio": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "ratio"
+          ],
+          "properties": {
+            "kind": {
+              "const": "recoil"
+            },
+            "ratio": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "stat_name",
+            "amount",
+            "target_side"
+          ],
+          "properties": {
+            "kind": {
+              "const": "modify_stat_stage"
+            },
+            "stat_name": {
+              "type": "string",
+              "enum": [
+                "attack",
+                "defense",
+                "special_attack",
+                "special_defense",
+                "speed",
+                "accuracy",
+                "evasion"
+              ]
+            },
+            "amount": {
+              "type": "integer",
+              "not": {
+                "const": 0
+              }
+            },
+            "target_side": {
+              "$ref": "#/definitions/targetSide"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "status_name",
+            "target_side"
+          ],
+          "properties": {
+            "kind": {
+              "const": "apply_status"
+            },
+            "status_name": {
+              "type": "string",
+              "enum": [
+                "Burn",
+                "Poison",
+                "Paralysis",
+                "Sleep",
+                "Freeze",
+                "Confusion",
+                "Flinch",
+                "Protect"
+              ]
+            },
+            "target_side": {
+              "$ref": "#/definitions/targetSide"
+            },
+            "chance": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "min_turns",
+            "max_turns"
+          ],
+          "properties": {
+            "kind": {
+              "const": "lock_move"
+            },
+            "min_turns": {
+              "type": "integer",
+              "minimum": 2
+            },
+            "max_turns": {
+              "type": "integer",
+              "minimum": 2
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "charge_turns"
+          ],
+          "properties": {
+            "kind": {
+              "const": "charge_move"
+            },
+            "charge_turns": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "start_message": {
+              "type": "string"
+            },
+            "semi_invulnerable_state": {
+              "type": "string",
+              "enum": [
+                "underground",
+                "underwater",
+                "airborne"
+              ]
+            },
+            "vulnerable_to_moves": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "move": {
+      "type": "object",
+      "required": [
+        "name",
+        "move_type",
+        "accuracy",
+        "max_pp",
+        "effects"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "move_type": {
+          "$ref": "#/definitions/typeName"
+        },
+        "accuracy": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "max_pp": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "priority": {
+          "type": "integer"
+        },
+        "effects": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/effect"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
