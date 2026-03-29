@@ -240,7 +240,7 @@
                     "power": 30.0,
                     "category": "physical",
                     "min_hits": 1,
-                    "max_hits": 2.0
+                    "max_hits": 2
                 }
             ]
         },
@@ -424,7 +424,7 @@
                     "power": 25.0,
                     "category": "physical",
                     "min_hits": 1,
-                    "max_hits": 2.0
+                    "max_hits": 2
                 }
             ]
         },
@@ -1410,7 +1410,7 @@
                     "power": 50.0,
                     "category": "physical",
                     "min_hits": 1,
-                    "max_hits": 2.0
+                    "max_hits": 2
                 }
             ]
         },
@@ -4482,7 +4482,7 @@
                     "power": 35.0,
                     "category": "physical",
                     "min_hits": 1,
-                    "max_hits": 2.0
+                    "max_hits": 2
                 }
             ]
         },
@@ -5288,7 +5288,7 @@
                     "power": 40.0,
                     "category": "physical",
                     "min_hits": 1,
-                    "max_hits": 2.0
+                    "max_hits": 2
                 }
             ]
         },
@@ -5533,7 +5533,7 @@
                     "power": 50.0,
                     "category": "physical",
                     "min_hits": 1,
-                    "max_hits": 2.0
+                    "max_hits": 2
                 }
             ]
         },
@@ -7778,7 +7778,7 @@
                     "power": 60.0,
                     "category": "physical",
                     "min_hits": 1,
-                    "max_hits": 2.0
+                    "max_hits": 2
                 }
             ]
         },
@@ -7871,7 +7871,7 @@
                     "power": 50.0,
                     "category": "physical",
                     "min_hits": 1,
-                    "max_hits": 2.0
+                    "max_hits": 2
                 }
             ]
         },
@@ -8570,7 +8570,7 @@
                     "power": 25.0,
                     "category": "physical",
                     "min_hits": 1,
-                    "max_hits": 3.0
+                    "max_hits": 3
                 }
             ]
         },
@@ -8962,7 +8962,7 @@
                     "power": 90.0,
                     "category": "physical",
                     "min_hits": 1,
-                    "max_hits": 3.0
+                    "max_hits": 3
                 }
             ]
         },
@@ -9201,7 +9201,7 @@
                     "power": 20.0,
                     "category": "physical",
                     "min_hits": 1,
-                    "max_hits": 10.0
+                    "max_hits": 10
                 }
             ]
         },
@@ -9262,7 +9262,7 @@
                     "power": 30.0,
                     "category": "physical",
                     "min_hits": 1,
-                    "max_hits": 3.0
+                    "max_hits": 3
                 }
             ]
         },
@@ -9598,7 +9598,7 @@
                     "power": 40.0,
                     "category": "special",
                     "min_hits": 1,
-                    "max_hits": 2.0
+                    "max_hits": 2
                 }
             ]
         },
@@ -9928,7 +9928,7 @@
                     "power": 50.0,
                     "category": "special",
                     "min_hits": 1,
-                    "max_hits": 2.0
+                    "max_hits": 2
                 }
             ]
         },

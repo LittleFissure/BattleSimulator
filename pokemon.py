@@ -222,7 +222,7 @@ class PokemonInstance:
             attack = math.floor((math.floor(base.attack/50 * self.level ) + 5 ) * self.nature.getMulti("attack")),
             defense = math.floor((math.floor(base.defense/50 * self.level ) + 5) * self.nature.getMulti("defense")),
             special_attack = math.floor((math.floor(base.special_attack/50 * self.level ) + 5) * self.nature.getMulti("special_attack")),
-            special_defense = (math.floor(base.special_defense/50 * self.level ) + 5) * self.nature.getMulti("special_defense"),
+            special_defense = math.floor((math.floor(base.special_defense/50 * self.level ) + 5) * self.nature.getMulti("special_defense")),
             speed = math.floor((math.floor(base.speed/50 * self.level ) + 5) * self.nature.getMulti("speed")),
             
             accuracy= base.accuracy,
