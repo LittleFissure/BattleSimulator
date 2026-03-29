@@ -183,7 +183,7 @@ class DamageEffect(Effect):
         
         if is_crit:
             final_damage *= self.crit_multiplier
-        return max(1, int(final_damage)), type_multiplier, stab_multiplier
+        return max(0, int(final_damage)), type_multiplier, stab_multiplier
 
     def apply(self, user, target, move_type, move_name, log, context) -> None:
         """Handle apply."""

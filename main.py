@@ -698,7 +698,7 @@ class TeamBuilderBattleApp:
             selected_moves = random.choices(self.move_names, k=MAX_MOVES_PER_POKEMON)
 
         base_level = int(self.random_level_base_var.get() or 1)
-        level_range = int(self.random_level_range_var.get() or 0)
+        level_range = abs(int(self.random_level_range_var.get() or 0))
 
         low = max(MIN_LEVEL, base_level - level_range)
         high = min(MAX_LEVEL, base_level + level_range)
