@@ -178,7 +178,7 @@ class DamageEffect(Effect):
         weather_multiplier = 1.0 if weather is None else weather.damage_multiplier_for_move(move_type)
         burnMulti = 0.5 if (any(isinstance(status,get_status_factory("Burn")) for status in user.status_effects)) and self.category == "physical" else 1
 
-        final_damage = base_damage * stab_multiplier * type_multiplier * weather_multiplier
+        final_damage = base_damage * stab_multiplier * type_multiplier * weather_multiplier * random.uniform(0.85,1.0)
         
         
         if is_crit:

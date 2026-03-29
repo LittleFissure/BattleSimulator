@@ -13,6 +13,7 @@ from battle_manager import BattleAction, BattleManager
 from moves import load_moves
 from pokemon import NatureList, PokemonInstance, load_pokemon_templates
 from team import Team
+import AI
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
@@ -1019,7 +1020,7 @@ class TeamBuilderBattleApp:
 
         usable_moves = [known_move for known_move in active.known_moves if known_move.is_usable]
         if usable_moves:
-            return BattleAction.move(random.choice(usable_moves).move.name)
+            return BattleAction.move(AI.find_best_move(active,self.enemy_team,self.battle.player, usable_moves))
         if self.enemy_team.has_usable_benched_pokemon():
             return BattleAction.switch(self.enemy_team.choose_first_benched_available())
         raise ValueError(f"{active.name} has no usable moves left.")
